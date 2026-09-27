@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+/**
+ * Clase preparada para recibir solicitudes HTTP
+ * la cual maneja todas esas peticiones
+ */
+
 @Controller
 public class UsuarioController {
 

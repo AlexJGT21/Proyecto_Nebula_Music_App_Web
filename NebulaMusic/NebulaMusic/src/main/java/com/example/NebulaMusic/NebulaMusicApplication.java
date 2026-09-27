@@ -9,5 +9,4 @@ public class NebulaMusicApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(NebulaMusicApplication.class, args);
 	}
-
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nébula Music - Inicio (Código Base)</title>
-    <link rel="stylesheet" href="../templates/styles/styles.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
 </head>
 <body>
 
@@ -13,6 +13,13 @@
         <a class="logo" href="index.html">
             <img src="../static/imgs/nebula-03.svg" alt="Logo Nébula" width="100">
         </a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
@@ -23,32 +30,46 @@
     <!-- CABECERA -->
     <header class="principal">
         <img src="../static/imgs/cover.jpg" alt="Cover Nébula" width="100%" height="200" style="object-fit: cover;">
-        <h1>Tu música en la nube y en tu espacio.</h1>
+        <h1 >Tu música en la <span>nube</span> y en tu <span>espacio.</span></h1>
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-        
+        <h2>Novedades de la Semana</h2>
         <!-- SECCIÓN DE NOTICIAS -->
         <section id="noticias">
-            <h2>Novedades de la Semana</h2>
 
-            <!-- Artículo 1 -->
+            <!-- Articulo uno -->
             <article>
-                <h3>Taylor Swift en su nueva era</h3>
-                <p>El nuevo disco de Taylor, <i>"The life of a showgirl"</i> saldrá a la venta el 3 de octubre.</p>
+                <img src="../static/imgs/Taylor-Swift.jpg" alt="Taylor Swift">
+                <div class="contenido">
+                    <div>
+                        <h3>Taylor Swift en su nueva era</h3>
+                        <p>El nuevo disco de Taylor, <i>"The life of a showgirl"</i> saldrá a la venta el 3 de octubre.</p>
+                    </div>
+                </div>
             </article>
 
-            <!-- Artículo 2 -->
+            <!-- Artículo dos -->
             <article>
-                <h3>Oasis</h3>
-                <p>Los hermanos Liam y Noel Gallagher se reencontrarán con sus fans y traerán un setlist espectacular.</p>
+                <img src="../static/imgs/Oasis.jpg" alt="Oasis">
+                <div>
+                    <div>
+                        <h3>Oasis</h3>
+                        <p>Los hermanos Liam y Noel Gallagher se reencontrarán con sus fans y traerán un setlist espectacular.</p>
+                    </div>
+                </div>
             </article>
 
-            <!-- Artículo 3 -->
+            <!-- Artículo tres -->
             <article>
-                <h3>Los Reztos en concierto</h3>
-                <p>Gran éxito en el concierto tributo a Marea en Ciudad Obregón.</p>
+                <img src="../static/imgs/Marea.jpg" alt="Concierto en Ciudad Obregon">
+                <div>
+                    <div>
+                        <h3>Los Reztos en concierto</h3>
+                        <p>Gran éxito en el concierto tributo a Marea en Ciudad Obregón.</p>
+                    </div>
+                </div>
             </article>
 
         </section>
