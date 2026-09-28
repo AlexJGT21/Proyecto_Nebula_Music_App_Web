@@ -9,8 +9,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-
-
+    
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
@@ -18,7 +17,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/", "/index", "/iniciar-sesion", "/registro").permitAll()
                         .requestMatchers("/crear-cuenta", "/autentication").permitAll()
-                        .requestMatchers("/static/**", "/css/**", "/js/**", "/images/**").permitAll()
+                        .requestMatchers("/styles/**", "/js/**", "/imgs/**").permitAll()
                         .requestMatchers("/", "/index", "/index.html", "/iniciar-sesion",
                                 "/iniciar-sesion.html", "/registro", "/registro.html").permitAll()
                         .anyRequest().authenticated()
